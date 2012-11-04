@@ -23,6 +23,9 @@
 
   },
   "scripts": {
-    "test": "./bin/test"
+    "test": "./bin/test",
+    "start": "node server.js",
+    "watch": "./node_modules/.bin/mocha --growl --watch test/**/*.coffee",
+    "devserver": "./node_modules/node-dev/node-dev server.js"
   }
 }
