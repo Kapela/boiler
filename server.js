@@ -4,6 +4,7 @@ var express = require('express'),
 stylus = require('stylus');
 
 require('express-namespace');
+require('express-resource');
 
 var app = express();
 

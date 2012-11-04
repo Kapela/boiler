@@ -15,7 +15,12 @@
     "express-resource": "~1.0.0"
   },
   "devDependencies": {
-    "node-dev": "~0.2.8"
+    "node-dev": "~0.2.8",
+    "mocha": "~1.6.0",
+    "request": "~2.11.4",
+    "libxmljs": "~0.6.1",
+    "commander": "~1.0.5"
+
   },
   "scripts": {
     "test": "./bin/test"
