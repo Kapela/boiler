@@ -13,7 +13,7 @@ MOCHA_ARGS=""
 if [ -n "$*" ]; then
   MOCHA_ARGS=$*
 else
-  MOCHA_ARGS="test/*.js test/*.coffee test/models/*.coffee test/apps/*.coffee"
+  MOCHA_ARGS="test/*.js test/*.coffee test/apps/*.coffee"
 fi
 
 ./node_modules/.bin/mocha $MOCHA_ARGS
