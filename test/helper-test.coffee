@@ -5,7 +5,7 @@ chai = require("chai")
 # chai.should()
 # chai.use chaiModel
 
-# app = require "../server"
+app = require "../server"
 
 assert = chai.assert
 expect = chai.expect
