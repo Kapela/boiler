@@ -1,5 +1,7 @@
 require "./_helper"
-assert = require 'assert'
+# assert = require 'assert'
+chai = require 'chai'
+chai.should()
 app = require "../server"
 
 describe "Array", ->
