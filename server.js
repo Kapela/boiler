@@ -43,6 +43,12 @@ app.configure(function() {
   app.use(flash());
 });
 
+// Global helpers
+
+
+// Routes
+require('./apps/controllers/login_controller')(app);
+
 
 server = app.listen(app.settings.port);
 console.log("Express server listening on port %d in %s mode", app.settings.port, app.settings.env);
