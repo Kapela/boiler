@@ -47,7 +47,7 @@ app.configure(function() {
 
 
 // Routes
-require('./apps/controllers/login_controller')(app);
+require('./app/controllers/login_controller')(app);
 
 
 server = app.listen(app.settings.port);
