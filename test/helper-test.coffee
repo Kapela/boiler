@@ -9,7 +9,7 @@ app = require "../server"
 
 assert = chai.assert
 expect = chai.expect
-
+should = chai.should
 
 describe "Array", ->
   describe "#indexOf()", ->

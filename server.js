@@ -1,6 +1,7 @@
 require('coffee-script');
 
 var express = require('express'),
+cons = require('consolidate'),
 stylus = require('stylus');
 
 require('express-namespace');
