@@ -3,6 +3,8 @@ require('coffee-script');
 var express = require('express'),
 cons = require('consolidate'),
 stylus = require('stylus');
+// bootstrap = require('bootstrap'),
+// fs = require('fs');
 
 require('express-namespace');
 require('express-resource');
@@ -21,6 +23,19 @@ app.use(express.methodOverride());
 app.use(require('connect-assets')());
 app.use(express.static(__dirname + '/public'));
 app.use(app.router);
+
+// Stylus and bootstrap added
+//
+// var styl = fs.readFileSync(__dirname + '/example.style', 'utf8');
+
+// var css = stylus(styl)
+  // .use(bootstrap())
+  // .set('filename', 'example.styl')
+  // .set('compress', true)
+  // .render(function(err, css){
+    // if (err) throw err;
+    // console.log(css);
+  // });
 
 app.configure('development', function () {
   app.use(express.errorHandler({

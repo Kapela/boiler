@@ -1,0 +1,17 @@
+{
+  "name": "Bower Boiler Plate Components",
+  "version": "1.0.0",
+  "main": [
+    "./client/stylesheets/app.css",
+    "./client/javascripts/app.js",
+    "./path/to/sprite.img"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "backbone": "latest",
+    "handlebars": "latest",
+    "bootstrap.css": "latest",
+    "backbone.localStorage": "latest",
+    "modernizr": "latest"
+  }
+}
