@@ -1,4 +1,4 @@
-# require "./_helper"
+require "./_helper"
 # assert = require 'assert'
 chai = require("chai")
 # chaiModel = require("./helpers/model")

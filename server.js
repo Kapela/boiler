@@ -2,6 +2,7 @@ require('coffee-script');
 
 var express = require('express'),
 cons = require('consolidate'),
+bootstrap = require('bootstrap-stylus'),
 stylus = require('stylus');
 // bootstrap = require('bootstrap'),
 // fs = require('fs');
@@ -36,6 +37,17 @@ app.use(app.router);
     // if (err) throw err;
     // console.log(css);
   // });
+
+  function compile(str, path) {
+    return stylus(str)
+      .set('filename', path)
+      .use(bootstrap());
+  }
+
+  app.use(stylus.middleware({
+    src: __dirname + '/public',
+    compile: compile
+  }));
 
 app.configure('development', function () {
   app.use(express.errorHandler({

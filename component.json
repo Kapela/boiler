@@ -12,6 +12,7 @@
     "handlebars": "latest",
     "bootstrap.css": "latest",
     "backbone.localStorage": "latest",
-    "modernizr": "latest"
+    "modernizr": "latest",
+    "requirejs": "latest"
   }
 }
