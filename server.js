@@ -38,16 +38,16 @@ app.use(app.router);
     // console.log(css);
   // });
 
-  function compile(str, path) {
-    return stylus(str)
-      .set('filename', path)
-      .use(bootstrap());
-  }
+function compile(str, path) {
+  return stylus(str)
+    .set('filename', path)
+    .use(bootstrap());
+}
 
-  app.use(stylus.middleware({
-    src: __dirname + '/public',
-    compile: compile
-  }));
+app.use(stylus.middleware({
+  src: __dirname + '/public',
+  compile: compile
+}));
 
 app.configure('development', function () {
   app.use(express.errorHandler({
@@ -78,4 +78,4 @@ require('./app/controllers/login_controller')(app);
 
 
 server = app.listen(app.settings.port);
-console.log("Express server listening on port %d in %s mode", app.settings.port, app.settings.env);
+console.log("Express server listening on port %d in %s mode\nPress CTRL-C to stop server", app.settings.port, app.settings.env);
