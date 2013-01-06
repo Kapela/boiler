@@ -13,6 +13,7 @@
     "bootstrap.css": "latest",
     "backbone.localStorage": "latest",
     "modernizr": "latest",
-    "requirejs": "latest"
+    "requirejs": "latest",
+    "jade": "latest"
   }
 }
