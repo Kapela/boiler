@@ -10,3 +10,45 @@ Hiredis
 Socket io
 Redis
 Node-dev
+
+\--app (Node Server Javascript)
+|  \--controllers
+|  \--models
+|  \--views
+|  \--helpers.coffee
+|  \--socket-io.coffee
+|
+\--assets (Client-side pre-compilation assets)
+|  \--scripts (Client-side coffeescript)
+|  |  \--vendor (bower directory. .bowerrc = "directory": "assets/scripts/vendor")
+|  |  \--coffeescript
+|  |     \--grunt.coffee
+|  \--stylesheets (SASS, STYLUS, LESS stylesheets)
+|
+\--dist (Minified files for distribution)
+|  \--stylesheets
+|  \--javascripts
+|
+\--bin (Scripts to run)
+|  \--devserver
+|  \--test
+|  \--watch
+|
+\--src (Server-side pre-compilation assets)
+|  \--build
+|     \--app.build.js
+|     \--build.sh*
+|
+\--public
+|  \--stylesheets
+|  \--img
+|  \--javascripts
+|
+\--test
+|  \--apps
+|  \--models
+|  \--_helper.js
+|
+\--app.js
+\--package.json
+\--grunt.js
