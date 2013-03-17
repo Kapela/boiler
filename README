@@ -19,18 +19,18 @@ Node-dev
 |  \--socket-io.coffee
 |
 \--assets (Client-side pre-compilation assets)
-|  \--scripts (Client-side coffeescript)
+|  \--javascripts (Client-side coffeescript)
 |  |  \--vendor (bower directory. .bowerrc = "directory": "assets/scripts/vendor")
 |  |  \--coffeescript
-|  |     \--grunt.coffee
 |  \--stylesheets (SASS, STYLUS, LESS stylesheets)
+|  \--grunt.coffee
 |
 \--dist (Minified files for distribution)
 |  \--stylesheets
 |  \--javascripts
 |  \--images
 |
-\--bin (Scripts to run)
+\--bin (Scripts to run -- possibly replace with gruntfile)
 |  \--devserver
 |  \--test
 |  \--watch
@@ -50,6 +50,14 @@ Node-dev
 |  \--models
 |  \--_helper.js
 |
+\--views
+|
 \--app.js
 \--package.json
 \--grunt.js
+
+
+CREATE COMPASS
+=============
+
+$ compass create --bare --sass-dir "assets/stylesheets/sass" --css-dir "public/stylesheets/css" --javascripts-dir "public/javascripts" --images-dir "public/images"
