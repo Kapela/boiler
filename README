@@ -20,8 +20,7 @@ Node-dev
 |
 \--assets (Client-side pre-compilation assets)
 |  \--javascripts (Client-side coffeescript)
-|  |  \--vendor (bower directory. .bowerrc = "directory": "assets/scripts/vendor")
-|  |  \--coffeescript
+|  |  \--coffeescripts
 |  \--stylesheets (SASS, STYLUS, LESS stylesheets)
 |
 \--dist (Minified files for distribution)
@@ -39,9 +38,10 @@ Node-dev
 |     \--app.build.js
 |     \--build.sh*
 |
-\--public
+\--public (Post compiled scripts)
 |  \--stylesheets
 |  \--javascripts
+|  |  \--vendor (bower directory. .bowerrc = "directory": "assets/javascripts/vendor")
 |  \--images
 |
 \--test
