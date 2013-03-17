@@ -23,7 +23,6 @@ Node-dev
 |  |  \--vendor (bower directory. .bowerrc = "directory": "assets/scripts/vendor")
 |  |  \--coffeescript
 |  \--stylesheets (SASS, STYLUS, LESS stylesheets)
-|  \--grunt.coffee
 |
 \--dist (Minified files for distribution)
 |  \--stylesheets
@@ -56,8 +55,74 @@ Node-dev
 \--package.json
 \--grunt.js
 
+======================================================
+COMPASS
+======================================================
 
-CREATE COMPASS
-=============
+Create a Gemfile
+----------------
 
-$ compass create --bare --sass-dir "assets/stylesheets/sass" --css-dir "public/stylesheets/css" --javascripts-dir "public/javascripts" --images-dir "public/images"
+$ touch Gemfile
+
+$ gem install bundler (http://gembundler.com)
+
+Specify Gemfile's dependencies:
+
+source "https://rubygems.org"
+
+gem 'compass'
+gem 'sass'
+gem 'compass_twitter_bootstrap'
+gem 'susy'
+
+
+$ bundle install
+$ git add Gemfile Gemfile.lock
+
+
+Create a config.rb
+------------------
+
+# Compass CSS framework config file
+
+require 'susy'
+require 'compass_twitter_bootstrap'
+# Require any additional plugins here.
+
+project_type = :stand_alone
+# Set this to the root of your project when deployed:
+http_path = "/"
+sass_dir ="assets/stylesheets"
+css_dir = "public/stylesheets"
+images_dir = "public/images"
+fonts_dir = "public/fonts"
+javascripts_dir = "public/javascripts"
+line_comments = false
+preferred_syntax = :sass
+output_style = :expanded
+relative_assets = true
+
+
+
+
+$ compass create
+
+
+SCSS to SASS Conversion tip
+To easily convert .scss files to .sass files you can use this little bash script:
+
+$ for f in *.scss; do sass-convert -F scss -T sass $f ${f%%.*}.sass; done
+
+To convert all twitter bootstrap .scss files to .sass (with overwrite):
+
+$ for f in stylesheets/compass_twitter_bootstrap/*.scss; do sass-convert -F scss -T sass $f stylesheets_sass/compass_twitter_bootstrap/${f%%.*}.sass; done
+
+$ for f in stylesheets/*.scss; do sass-convert -F scss -T sass $f stylesheets_sass/${f%%.*}.sass; done
+
+Nice and easy :)
+
+===========================================================
+
+===========================================================
+
+
