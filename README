@@ -28,6 +28,7 @@ Node-dev
 \--dist (Minified files for distribution)
 |  \--stylesheets
 |  \--javascripts
+|  \--images
 |
 \--bin (Scripts to run)
 |  \--devserver
@@ -41,8 +42,8 @@ Node-dev
 |
 \--public
 |  \--stylesheets
-|  \--img
 |  \--javascripts
+|  \--images
 |
 \--test
 |  \--apps
