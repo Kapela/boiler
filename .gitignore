@@ -1,4 +1,5 @@
 node_modules
+public/javascripts/vendor
 components
 
 #Compiled source#
