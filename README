@@ -15,7 +15,7 @@ Node-dev
 |  \--controllers
 |  \--models
 |  \--views
-|  \--helpers.coffee
+|  \--helpers
 |  \--socket-io.coffee
 |
 \--assets (Client-side pre-compilation assets)

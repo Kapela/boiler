@@ -40,5 +40,12 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-qunit"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-contrib-concat"
+  grunt.loadNpmTasks "grunt-contrib-sass"
+  grunt.loadNpmTasks "grunt-contrib-jade"
+  grunt.loadNpmTasks "grunt-contrib-coffee"
+  grunt.loadNpmTasks "grunt-contrib-requirejs"
+  grunt.loadNpmTasks "grunt-contrib-cssmin"
+  grunt.loadNpmTasks "grunt-contrib-handlebars"
+  grunt.loadNpmTasks "grunt-contrib-htmlmin"
   grunt.registerTask "test", ["jshint", "qunit"]
   # grunt.registerTask "default", ["jshint", "qunit", "concat", "uglify"]
